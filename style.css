@@ -1,9 +1,9 @@
  <style>
-        ul {
+        ul, ol {
               opacity: 0.5;
             }
 
-        ul:hover {
+        ul, ol:hover {
                     opacity: 1.0;
                   }
       </style>
