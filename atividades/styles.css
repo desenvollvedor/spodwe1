@@ -1,0 +1,78 @@
+/* Estilo para o layout geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8d8df7;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 2000px;
+    
+}
+
+/* Menu lateral */
+.menu {
+    width: 200px;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown */
+.dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background-color: #444;
+}
+
+.menu li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    width: 200px;
+}
+
+/* Conteúdo central */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+iframe {
+    border: none;
+}
